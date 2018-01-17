@@ -1,6 +1,7 @@
 # Mobile App Tutorial
 
-# Requirements Please use all the links to download/create accounts
+# Requirements 
+Please use all the links to download/create accounts
   * [github account](https://github.com/join?source=header-home) create an account and verify with you remail
   * [github desktop](https://desktop.github.com/) sign in with your github account
   * [vscode](https://code.visualstudio.com/download) text editor where most of our code will be done
