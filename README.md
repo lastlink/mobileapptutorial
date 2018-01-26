@@ -13,4 +13,4 @@ Please use all the links to download/create accounts
 
 # Notes:
   * [Terms](https://github.com/lastlink/mobileapptutorial/tree/master/terms)
-  * [Command Line Shortcuts](https://github.com/lastlink/mobileapptutorial/tree/master/shortcuts)
+  * [Shortcuts](https://github.com/lastlink/mobileapptutorial/tree/master/shortcuts)

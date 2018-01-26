@@ -13,3 +13,15 @@
     * `git branch` list branches
     * `git stash` take your staged files before a commit and add to a stack (like a stack of plates) useful for undos and also for moving changes to another branch
     * `git stash pop` takes the top of the stack of plates into your current repository (doesn't commit them)
+* Shortcut Legend
+    * Control ⌃
+    * Command ⌘
+    * Shift ⇧
+    * Option ⌥
+* Visual Code or vscode
+    * If on windows use ctrl (control) key instead of Command ⌘
+    * `⌘+p` then type in file to open quickly
+        * can type `>` to run commands E.g.
+        * `>reload window` if vscode is glitching useful to restart current window
+        * `>Shell Command: Install 'code' command in PATH`
+    * `⌃~` or `ctrl+~` should be same on both, opens vscode integrated terminal
