@@ -22,6 +22,7 @@ Useful terms to know for this project
     * we're using expo to do this for us
  * Frameworks dependencies 
     * react native - javascript based dependency that allows us to build our mobile apps
+ * Scrum
  * Git
     * tool used to track and save our changes
     * [branches](https://www.atlassian.com/git/tutorials/using-branches) - [wikipedia](https://en.wikipedia.org/wiki/Branching_(version_control))
