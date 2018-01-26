@@ -10,3 +10,7 @@ Please use all the links to download/create accounts
     * [expo app](https://expo.io/tools#client) to demo on your mobile device. ANDROID/IPHONE
     * [expo account](https://expo.io/signup) we may end up using mine, use your github account
     
+
+# Notes:
+  * [Terms](https://github.com/lastlink/mobileapptutorial/tree/master/terms)
+  * [Command Line Shortcuts](https://github.com/lastlink/mobileapptutorial/tree/master/shortcuts)
