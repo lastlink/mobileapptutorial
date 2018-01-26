@@ -5,6 +5,7 @@ Useful terms to know for this project
     * place where our source code is stored, can be in multiple locations for one project, e.g. your own computer, online, someone elses computer
  * GUI or ui
     * graphic user interface
+    * what you visually see and interact with
  * Mvp
     * minimal viable product
     * try to make the app as simple as possible to solve your need
