@@ -30,10 +30,10 @@ class Home extends Component {
           </View>
           <View style={{ marginBottom: 80 }}>
             <Button
-              style={{ backgroundColor: "pink", alignSelf: "center" }}
+              style={{ backgroundColor: "orange", alignSelf: "center" }}
               onPress={() => this.props.navigation.navigate("DrawerOpen")}
             >
-              <Text>Lets Go! Franconia Ward </Text>
+              <Text>Franconia Ward Teachers </Text>
             </Button>
           </View>
         </ImageBackground>
