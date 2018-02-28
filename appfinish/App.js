@@ -3,9 +3,15 @@ import Setup from "./src/boot/setup";
 const firebase = require("firebase");
 // Initialize Firebase
 
-import firebaseConfig from "./src/config";
+import * as config from "./src/config.js";
+const firebaseConfig = config.firebaseConfig
+console.log('printing config')
+console.log(firebaseConfig)
 
-firebase.initializeApp(firebaseConfig);
+// firebase.initializeApp(firebaseConfig);
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
 // Create a reference with .ref() instead of new Firebase(url)
 const rootRef = firebase.database().ref();
 const itemsRef = rootRef.child('items');
@@ -13,11 +19,11 @@ const itemsRef = rootRef.child('items');
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      dataSource: new ListView.DataSource({
-        rowHasChanged: (row1, row2) => row1 !== row2,
-      })
-    };
+    // this.state = {
+    //   dataSource: new ListView.DataSource({
+    //     rowHasChanged: (row1, row2) => row1 !== row2,
+    //   })
+    // };
     this.itemsRef = this.getRef().child('items');
   }
 
