@@ -1,23 +1,23 @@
 import React from "react";
 import Setup from "./src/boot/setup";
-const firebase = require("firebase");
+// const firebase = require("firebase");
 // Initialize Firebase
 
-import * as config from "./src/config.js";
-const firebaseConfig = config.firebaseConfig
-console.log('printing config')
-console.log(firebaseConfig)
+// import * as config from "./src/config.js";
+// const firebaseConfig = config.firebaseConfig
+// console.log('printing config')
+// console.log(firebaseConfig)
 
 // firebase.initializeApp(firebaseConfig);
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
+// const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 // Create a reference with .ref() instead of new Firebase(url)
-const rootRef = firebase.database().ref();
-const itemsRef = rootRef.child('items');
+// const rootRef = firebase.database().ref();
+// const itemsRef = rootRef.child('items');
 
 export default class App extends React.Component {
-  constructor(props) {
+  /*constructor(props) {
     super(props);
     // this.state = {
     //   dataSource: new ListView.DataSource({
@@ -74,8 +74,7 @@ export default class App extends React.Component {
 
   componentDidMount() {
     this.listenForItems(this.itemsRef);
-  }
-
+  }*/
 
   render() {
     return <Setup />;

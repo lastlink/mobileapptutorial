@@ -5,3 +5,5 @@ npm-debug.*
 Logs*
 
 appfinish/src/config.js
+constants.js
+node_modules.zip
