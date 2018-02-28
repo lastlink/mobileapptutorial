@@ -36,6 +36,12 @@ const datas = [
     types: "8"
   },
   {
+    name: "Account",
+    route: "Account",
+    icon: "contact",
+    bg: "#477EEA"
+  },
+  {
     name: "Footer",
     route: "Footer",
     icon: "phone-portrait",
