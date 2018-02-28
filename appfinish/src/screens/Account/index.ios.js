@@ -25,7 +25,8 @@ const datas = [
     text: "Register"
   },
   {
-    route: "Logout"
+    route: "Logout",
+    text: "Logout"
   }
 ];
 
