@@ -4,4 +4,10 @@ npm-debug.*
 .DS_Store
 Logs*
 
+<<<<<<< HEAD
 appstart/node_modules.zip
+=======
+appfinish/src/config.js
+constants.js
+node_modules.zip
+>>>>>>> c13507cfefe906443785d7e9afb6bd0c11e493d7
