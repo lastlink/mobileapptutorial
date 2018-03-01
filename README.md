@@ -11,7 +11,7 @@ Please use all the links to download/create accounts
     * [expo account](https://expo.io/signup) we may end up using mine, use your github account
 
   * expo published app
-    * ![Image of expo code](hhttps://github.com/lastlink/mobileapptutorial/blob/master/imgs/expo_code.png)
+    * ![Image of expo code](https://github.com/lastlink/mobileapptutorial/blob/master/imgs/expo_code.png)
     
 
 # Notes:
