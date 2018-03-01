@@ -1,6 +1,6 @@
 # Mobile App Tutorial
 
-# Requirements 
+# Requirements  
 Please use all the links to download/create accounts
   * [github account](https://github.com/join?source=header-home) create an account and verify with you remail
   * [github desktop](https://desktop.github.com/) sign in with your github account
