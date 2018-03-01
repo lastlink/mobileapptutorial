@@ -4,3 +4,6 @@ npm-debug.*
 .DS_Store
 Logs*
 
+appfinish/src/config.js
+constants.js
+node_modules.zip

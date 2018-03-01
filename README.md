@@ -1,6 +1,6 @@
 # Mobile App Tutorial
 
-# Requirements 
+# Requirements  
 Please use all the links to download/create accounts
   * [github account](https://github.com/join?source=header-home) create an account and verify with you remail
   * [github desktop](https://desktop.github.com/) sign in with your github account
@@ -9,6 +9,9 @@ Please use all the links to download/create accounts
   * react native
     * [expo app](https://expo.io/tools#client) to demo on your mobile device. ANDROID/IPHONE
     * [expo account](https://expo.io/signup) we may end up using mine, use your github account
+
+  * expo published app
+    * ![Image of expo code](https://octodex.github.com/images/yaktocat.png)
     
 
 # Notes:
