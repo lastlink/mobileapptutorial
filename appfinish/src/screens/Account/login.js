@@ -44,14 +44,17 @@ class Login extends Component {
 
   handleSubmit = (e) => {
     // e.preventDefault()
-    this.setState({loading:true});
+    // this.setState({loading:true});
 
     // console.log(JSON.stringify(this.email))
     console.log("logging in")
-    console.log(this.email)
+    console.log(this.state.email)
+    // console.log(this.email)
     // console.log(JSON.stringify(this.pw))
-    if (this.email && this.pw) {
+    // && this.pw
+    if (this.state.email) {
       this.setState({loading:true});
+      this.setState({loginMessage:this.state.email} )//asdf
       // login(this.email, this.pw)
       //   .then((result) => {
       //     this.setState({loading:false});
@@ -77,6 +80,13 @@ class Login extends Component {
  }
 
   handleFormChange(formData){
+
+    console.log("form update")
+    console.log(JSON.stringify(formData))
+    if(formData.pw)
+    this.setState({pw:formData.pw});
+    if(formData.email)
+    this.setState({email:formData.email});
     //formData will be a json object that will contain
     // refs of every field
     //formData.first_name
@@ -111,11 +121,13 @@ class Login extends Component {
             <Form >
               <Item inlineLabel>
                 <Label>Email</Label>
-                <Input ref={(email) => this.email = email} />
+                {/* ref={(email) => this.email = email} */}
+                <Input  onChangeText={ (text) => this.setState({ email: text }) }  ref={(email) => this.email = email} />
               </Item>
               <Item inlineLabel last>
                 <Label>Password</Label>
-                <Input secureTextEntry ref={(pw) => this.pw = pw} />
+                {/* ref={(pw) => this.pw = pw} */}
+                <Input secureTextEntry onChangeText={ (text) => this.setState({ pw: text }) }ref={(pw) => this.pw = pw}     />
               </Item>
 
               {/* {
