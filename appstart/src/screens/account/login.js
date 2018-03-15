@@ -17,7 +17,13 @@ import {
 } from "native-base";
 import styles from "./styles";
 
+import { login, resetPassword} from '../../helpers/auth'
 
+function setErrorMsg(error) {
+  return {
+    loginMessage: error
+  }
+}
 
 class Login extends Component {
   render() {
