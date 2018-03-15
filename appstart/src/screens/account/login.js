@@ -17,7 +17,7 @@ import {
 } from "native-base";
 import styles from "./styles";
 
-import { login, resetPassword} from '../../helpers/auth'
+import { login, resetPassword} from "../../helpers/auth";
 
 function setErrorMsg(error) {
   return {

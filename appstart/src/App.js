@@ -4,9 +4,9 @@ import { StackNavigator, DrawerNavigator } from "react-navigation";
 
 import Header from "./screens/Header/";
 
-import Account from "./screens/account/";
-import Login from "./screens/account/login";
-import Register from "./screens/account/register";
+import Account from "./screens/Account/";
+import Login from "./screens/Account/login";
+import Register from "./screens/Account/register";
 
 import Header1 from "./screens/Header/1";
 import Header2 from "./screens/Header/2";
