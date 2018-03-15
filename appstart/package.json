@@ -1,5 +1,5 @@
 {
-  "name": "NativebaseKitchenSink",
+  "name": "francowardapp",
   "version": "2.3.5",
   "private": true,
   "devDependencies": {
@@ -11,6 +11,7 @@
     "eslint-plugin-prettier": "2.1.2",
     "eslint-plugin-react": "7.1.0",
     "eslint-plugin-react-native": "3.0.1",
+    "firebase": "^4.10.1",
     "flow-bin": "0.52.0",
     "flow-typed": "2.1.5",
     "husky": "0.14.3",
