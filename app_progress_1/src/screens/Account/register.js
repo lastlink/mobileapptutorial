@@ -44,6 +44,8 @@ class Register extends Component {
           this.setState({ loading: false });
           console.log("user registered")
           console.log(result)
+          this.props.navigation.navigate("Login")
+
 
         })
         .catch((error) => {

@@ -28,7 +28,7 @@ function setErrorMsg(error) {
 
 class Login extends Component {
 
-  state = { loginMessage: "test" }
+  state = { loginMessage: "" }
 
   handleSubmit = (e) => {
     console.log("logging in");
@@ -44,6 +44,8 @@ class Login extends Component {
           this.setState({loading:false});
           console.log("logging in")
           console.log(result)
+          this.props.navigation.navigate("Account")
+
 
         })
         .catch((error) => {
