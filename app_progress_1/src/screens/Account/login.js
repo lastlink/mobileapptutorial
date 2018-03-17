@@ -90,7 +90,7 @@ class Login extends Component {
           </Item>
           <Form>
             <Item inlineLabel>
-              <Label>Username</Label>
+              <Label>Username/Email</Label>
               <Input onChangeText={(text) => this.setState({ email: text })} ref={(email) => this.email = email} />
             </Item>
             <Item inlineLabel last>
