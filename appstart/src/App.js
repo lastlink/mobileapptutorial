@@ -3,6 +3,11 @@ import { Root } from "native-base";
 import { StackNavigator, DrawerNavigator } from "react-navigation";
 
 import Header from "./screens/Header/";
+
+import Account from "./screens/Account/";
+import Login from "./screens/Account/Login";
+import Register from "./screens/Account/Register";
+
 import Header1 from "./screens/Header/1";
 import Header2 from "./screens/Header/2";
 import Header3 from "./screens/Header/3";
@@ -107,6 +112,7 @@ import Actionsheet from "./screens/actionsheet";
 const Drawer = DrawerNavigator(
   {
     Home: { screen: Home },
+    Account: {screen: Account},
     Anatomy: { screen: Anatomy },
     Header: { screen: Header },
     Footer: { screen: Footer },
@@ -147,6 +153,9 @@ const Drawer = DrawerNavigator(
 const AppNavigator = StackNavigator(
   {
     Drawer: { screen: Drawer },
+
+    Register: { screen: Register },
+    Login: { screen: Login },
 
     Header1: { screen: Header1 },
     Header2: { screen: Header2 },

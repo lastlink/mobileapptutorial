@@ -23,9 +23,9 @@ const datas = [
     bg: "#C5F442"
   },
   {
-    name: "Actionsheet",
-    route: "Actionsheet",
-    icon: "easel",
+    name: "Account",
+    route: "Account",
+    icon: "account-circle",
     bg: "#C5F442"
   },
   {
