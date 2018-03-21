@@ -11,16 +11,18 @@
     "eslint-plugin-prettier": "2.1.2",
     "eslint-plugin-react": "7.1.0",
     "eslint-plugin-react-native": "3.0.1",
+    "firebase": "^4.10.1",
     "flow-bin": "0.52.0",
     "flow-typed": "2.1.5",
     "husky": "0.14.3",
     "jest": "20.0.4",
     "jest-expo": "19.0.5",
     "prettier": "1.5.3",
-    "react-native-scripts": "1.1.0",
+    "react-native-form-generator": "^0.9.9",
+    "react-native-scripts": "^1.11.1",
     "react-test-renderer": "16.0.0-alpha.12"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "main": "index.js",
   "scripts": {
     "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
@@ -37,8 +39,10 @@
     "lodash": "4.13.1",
     "moment": "2.13.0",
     "native-base": "2.3.5",
-    "react": "16.0.0",
-    "react-native": "0.50.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.2.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz",
+    "react-native-firebase": "^3.2.5",
     "react-navigation": "1.0.0-beta.19"
   }
 }
