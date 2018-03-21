@@ -2,7 +2,13 @@ import React from "react";
 import { Root } from "native-base";
 import { StackNavigator, DrawerNavigator } from "react-navigation";
 
+import config from "./config"
 import Header from "./screens/Header/";
+
+import Account from "./screens/Account/";
+import Login from "./screens/Account/login";
+import Register from "./screens/Account/register";
+
 import Header1 from "./screens/Header/1";
 import Header2 from "./screens/Header/2";
 import Header3 from "./screens/Header/3";
@@ -109,6 +115,8 @@ const Drawer = DrawerNavigator(
     Home: { screen: Home },
     Anatomy: { screen: Anatomy },
     Header: { screen: Header },
+    Account: { screen: Account },
+    Account: { screen: Account },
     Footer: { screen: Footer },
     NHBadge: { screen: NHBadge },
     NHButton: { screen: NHButton },
@@ -148,6 +156,8 @@ const AppNavigator = StackNavigator(
   {
     Drawer: { screen: Drawer },
 
+    Login: { screen: Login },
+    Register: { screen: Register },
     Header1: { screen: Header1 },
     Header2: { screen: Header2 },
     Header3: { screen: Header3 },
