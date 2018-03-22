@@ -14,7 +14,7 @@ import {
 import styles from "./style";
 
 const drawerCover = require("../../../assets/drawer-cover.png");
-const drawerImage = require("../../../assets/logo-kitchen-sink.png");
+const drawerImage = require("../../../assets/youth.jpg");
 const datas = [
   {
     name: "Anatomy",
@@ -25,7 +25,7 @@ const datas = [
   {
     name: "Account",
     route: "Account",
-    icon: "account-circle",
+    icon: "contact",
     bg: "#C5F442"
   },
   {
