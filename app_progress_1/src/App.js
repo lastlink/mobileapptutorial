@@ -5,23 +5,22 @@ import { BackHandler } from "react-native";
 import { Root } from "native-base";
 import { addNavigationHelpers, NavigationActions } from "react-navigation";
 
-import { Provider } from 'react-redux';
-import store from './store';
+import { Provider } from "react-redux";
+import store from "./store";
 
-import { StyleProvider } from 'native-base';
-// import getTheme from '../native-base-theme/components';
+import { StyleProvider } from "native-base";
+// import getTheme from "../native-base-theme/components";
 import getTheme from "./theme/components";
 import material from "./theme/variables/commonColor";
 
 
-// import material from '../native-base-theme/variables/material';
+// import material from "../native-base-theme/variables/material";
 
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
 
-import AppNavigator from './router/AppNavigator';
+import AppNavigator from "./router/AppNavigator";
 
 class App extends React.Component {
-	
 	componentDidMount() {
 		BackHandler.addEventListener("hardwareBackPress", this.onBackPress);
 	}
@@ -35,8 +34,8 @@ class App extends React.Component {
 		}
 		dispatch(NavigationActions.back());
 		return true;
-	};
-	
+    };
+
 	render() {
 		return (
 			<AppNavigator navigation={addNavigationHelpers({
@@ -60,4 +59,4 @@ export default () =>
 				<AppWithNavigationState />
 			</Root>
 		</StyleProvider>
-	</Provider>;
+    </Provider>;
