@@ -6,6 +6,11 @@ import App from "../App";
 import getTheme from "../theme/components";
 import variables from "../theme/variables/commonColor";
 
+import { Provider, connect } from "react-redux";
+
+// import store from '../store';
+// let store = createStore(Setup);
+
 export default class Setup extends Component {
   constructor() {
     super();
@@ -24,13 +29,16 @@ export default class Setup extends Component {
     });
     this.setState({ isReady: true });
   }
+
   render() {
     if (!this.state.isReady) {
       return <Expo.AppLoading />;
     }
     return (
       <StyleProvider style={getTheme(variables)}>
-        <App />
+        {/* <Provider store={store}> */}
+          <App />
+        {/* </Provider>; */}
       </StyleProvider>
     );
   }
