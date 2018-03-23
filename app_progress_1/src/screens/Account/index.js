@@ -36,24 +36,24 @@ const datas = [
 // function logoutUser(){
 
 // }
-function UserLogout() {
-  this.setState({ loading: true });
-  logout().then((result) => {
-    this.setState({ loading: false });
 
-  })
-    .catch((error) => {
-      this.setState({ loading: false });
-      console.log(JSON.stringify(error))
-      // this.setState(setErrorMsg("Invalid username/password."))
-    })
-}
 
 
 
 class Account extends Component {
   constructor(props) {
     super(props);
+    this.state={
+      loading:false
+    }
+
+    this.eventHandler = this.eventHandler.bind(this);
+    this.UserLogout = this.UserLogout.bind(this);
+    this.UserView = this.UserView.bind(this);
+
+
+    console.log("loggind props for accounts:...")
+    console.log(JSON.stringify(props))
   }
   //   console.log("side bar props")
   //   console.log(props)
@@ -64,52 +64,90 @@ class Account extends Component {
   //     userprofile
   //   };
   // }
-  render() {
-    function UserView(props) {
-      const isLoggedIn = retrieveProfile();
-      console.log("checking if user logged in")
-      console.log(isLoggedIn)
-      if (isLoggedIn) {
-        return <List>
-          <ListItem>
-            <Left>
-              <Text>
-                Profile
-              </Text>
-            </Left>
-          </ListItem>
-          <ListItem>
-            <Left>
-              {
-                this.state.loading &&
-                <Spinner size="large" color="#0000ff" />
-              }
-              <Button full danger onPress={() => UserLogout()}>
-                <Text>Logout</Text>
-              </Button>
-            </Left>
-          </ListItem>
-        </List>;
-      }
-      return <List
-        dataArray={datas}
-        renderRow={data =>
-          <ListItem
-            button
-            onPress={() => props.navigation.navigate(data.route)}
-          >
-            <Left>
-              <Text>
-                {data.text}
-              </Text>
-            </Left>
-            <Right>
-              <Icon name="arrow-forward" />
-            </Right>
-          </ListItem>}
-      />;
 
+  // TODO: move logout to sidebar
+  UserLogout = () => {
+    console.log("logging off")
+    this.setState({ loading: true });
+    logout().then((result) => {
+      console.log("log off finished")
+      this.setState({ loading: false });
+      // this.props.navigation.dispatch("Account")
+      // console.log(result)
+      // this.setState({ userprofile: result });
+
+    })
+      .catch((error) => {
+        this.setState({ loading: false });
+        console.log(JSON.stringify(error))
+        // this.setState(setErrorMsg("Invalid username/password."))
+      })
+
+  }
+  eventHandler(event) {
+    console.log("logging off")
+
+    this.setState({ loading: true });
+    // this.anotherFunction();
+    // this.setState((prevState) => ({
+    //     toggle: !prevState.toggle
+    //   })
+    // );
+  }
+
+   UserView() {
+    let isLoggedIn = retrieveProfile();
+    console.log("checking if user logged in")
+    // console.log(props)
+    console.log(isLoggedIn)
+    if (isLoggedIn) {
+      return <List>
+        <ListItem>
+          <Left>
+            <Text>
+              Profile
+            </Text>
+          </Left>
+        </ListItem>
+        <ListItem>
+          <Left>
+            {
+              this.state.loading &&
+              <Spinner size="large" color="#0000ff" />
+            }
+            <Button full danger onPress={() => this.UserLogout()}>
+              <Text>Logout</Text>
+            </Button>
+          </Left>
+        </ListItem>
+      </List>;
     }
+    return <List
+      dataArray={datas}
+      renderRow={data =>
+        <ListItem
+          button
+          onPress={() => this.props.navigation.navigate(data.route)}
+        >
+          <Left>
+            <Text>
+              {data.text}
+            </Text>
+          </Left>
+          <Right>
+            <Icon name="arrow-forward" />
+          </Right>
+        </ListItem>}
+    />;
+
+  }
+
+  render() {
+    const { userprofile } = this.props;
+
+
+
+    
     // let { UserView } = this.props;
 
     return (
@@ -130,7 +168,8 @@ class Account extends Component {
         </Header>
 
         <Content>
-          <UserView {...this.props}/>
+          {this.UserView()} 
+          {/* <UserView {...this.props} /> */}
           {/* <List
             dataArray={datas}
             renderRow={data =>

@@ -87,7 +87,7 @@ class Register extends Component {
           <Form>
             <Item inlineLabel>
               <Label>Username/Email</Label>
-              <Input onChangeText={(text) => this.setState({ email: text })} ref={(email) => this.email = email} />
+              <Input autoCapitalize="none" onChangeText={(text) => this.setState({ email: text })} ref={(email) => this.email = email} />
             </Item>
             <Item inlineLabel last>
               <Label>Password</Label>

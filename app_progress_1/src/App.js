@@ -47,7 +47,8 @@ class App extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-	nav: state.nav
+	nav: state.nav,
+	userprofile: state.userprofile
 });
 
 const AppWithNavigationState = connect(mapStateToProps)(App);
