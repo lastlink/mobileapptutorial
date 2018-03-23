@@ -11,7 +11,7 @@
     "eslint-plugin-prettier": "2.1.2",
     "eslint-plugin-react": "7.1.0",
     "eslint-plugin-react-native": "3.0.1",
-    "firebase": "^4.10.1",
+    "firebase": "^4.11.0",
     "flow-bin": "0.52.0",
     "flow-typed": "2.1.5",
     "husky": "0.14.3",
@@ -41,6 +41,7 @@
     "react": "16.0.0",
     "react-native": "0.50.1",
     "react-navigation": "1.0.0-beta.19",
-    "react-redux": "^5.0.7"
+    "react-redux": "^5.0.7",
+    "redux-thunk": "^2.2.0"
   }
 }
