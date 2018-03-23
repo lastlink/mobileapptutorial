@@ -23,5 +23,8 @@ export function saveUser (user) {
       email: user.email,
       uid: user.uid
     })
-    .then(() => user)
+    .then(() => user);
+}
+export function retrieveProfile(){
+  return firebaseAuth().currentUser;
 }

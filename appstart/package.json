@@ -1,6 +1,5 @@
 {
   "name": "francoapp",
-  "description": "simple scripture note taking app",
   "version": "2.3.5",
   "private": true,
   "devDependencies": {

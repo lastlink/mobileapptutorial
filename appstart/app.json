@@ -3,6 +3,7 @@
     "sdkVersion": "23.0.0",
     "icon": "http://nativebase.io/assets/img/front-page-icon.png",
     "slug": "franco-app",
+    "description": "simple scripture note taking app",
     "loading": {
       "hideExponentText": true,
       "backgroundImage": "./assets/bomchannelkids.png"

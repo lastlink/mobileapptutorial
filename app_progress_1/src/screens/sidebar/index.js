@@ -12,6 +12,8 @@ import {
   Badge
 } from "native-base";
 import styles from "./style";
+import { retrieveProfile } from "../../helpers/auth";
+
 
 const drawerCover = require("../../../assets/drawer-cover.png");
 const drawerImage = require("../../../assets/logo-kitchen-sink.png");
@@ -180,6 +182,24 @@ const datas = [
     bg: "#48525D"
   }
 ];
+function UserView() {
+  const userprofile = retrieveProfile();
+  console.log("current profile:...")
+  console.log(userprofile)
+  if (userprofile) {
+    return <List>
+      <ListItem>
+        <Left>
+          <Text>
+            {userprofile.providerData[0].displayName || userprofile.providerData[0].email}
+        </Text>
+        </Left>
+      </ListItem>
+    </List>;
+  }
+  return null;
+
+}
 
 class SideBar extends Component {
   constructor(props) {
@@ -199,7 +219,19 @@ class SideBar extends Component {
         >
           <Image source={drawerCover} style={styles.drawerCover} />
           <Image square style={styles.drawerImage} source={drawerImage} />
-
+          <UserView />
+          {/* {
+            this.state.userprofile &&
+            <List>
+              <ListItem>
+                <Left>
+                  <Text>
+                    {this.state.userprofile.providerData[0].displayName || this.state.userprofile.providerData[0].email}
+                  </Text>
+                </Left>
+              </ListItem>
+            </List>
+          } */}
           <List
             dataArray={datas}
             renderRow={data =>
